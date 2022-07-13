@@ -100,10 +100,10 @@
             "type": "string",
             "nullable": true
           },
-          "name": {
-            "type": "string",
-            "nullable": true
-          }
+         # "name": {
+        #    "type": "string",
+         #   "nullable": true
+        #  }
         },
         "additionalProperties": false
       }
