@@ -14,7 +14,7 @@
           "200": {
             "description": "Success",
             "content": {
-              "text/plain": {
+              "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
@@ -30,7 +30,7 @@
                   }
                 }
               },
-              "text/json": {
+              "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
