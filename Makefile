@@ -38,7 +38,7 @@ create_branch_version:
 create_version_tag:
 	PACTICIPANT=${PACTICIPANT} ./example-bi-directional-provider-dotnet/scripts/create_version_tag.sh
 
-publish_success: .env create_version_tag
+publish_success: .env create_branch_version
 	@echo "\n========== STAGE: publish contract + results (success) ==========\n"
 	./example-bi-directional-provider-dotnet/scripts/publish.sh true
 
