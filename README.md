@@ -149,7 +149,7 @@ Some notes:
       In powershell in the root directory (you'll need a new window if you are using dotnet CLI to run the app) use docker run to perform the Schemathesis test. This will check the API implements the swagger doc accurately and output the results to report.txt. Once this is generated the API can be shut down again
 
       ```
-      docker run --net="host" schemathesis/schemathesis:stable run --stateful=links --checks all http://host.docker.internal:9000/swagger/v1/swagger.json > report.txt
+      docker run --net="host" schemathesis/schemathesis:stable run --stateful=links --checks all http://host.docker.internal:9000/swagger/v1/swagger.yaml > report.txt
       ```
 
   3. Now that the Swagger doc is generated and verified the contract can be published to PactFlow. The easiest way to do this via windows is using our standalone tools. See [here](https://docs.pactflow.io/docs/bi-directional-contract-testing/contracts/oas#publishing-the-provider-contract--results-to-pactflow) for cross platform instructions.

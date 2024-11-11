@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
     <Target Name="SwaggerPostBuildTarget" AfterTargets="Build">
         <Exec Command="dotnet tool restore"></Exec>
-        <Exec Command="dotnet tool run swagger tofile --output swagger.json  bin/Release/net8.0/example-bi-directional-provider-dotnet.dll v1"></Exec>
+        <Exec Command="dotnet tool run swagger tofile --output swagger.yaml  bin/Release/net8.0/example-bi-directional-provider-dotnet.dll v1"></Exec>
     </Target>
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
